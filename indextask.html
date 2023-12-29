@@ -1,0 +1,71 @@
+<html>
+
+<head>
+    <title>Transitions</title>
+</head>
+<style>
+    /* .paragraph{
+    margin-top: 100px;
+    background-color: rgb(244, 107, 16);
+     height:150px;
+     width:200px;
+     transition: width 4s;height: 2s;transform:2s;
+    } */
+    div{
+        height: 200px;
+        width: 200px;
+        background-color: brown;
+        transform: rotate();
+        transition: width 4s,height 4s, transform 2s;
+        transition-delay: 4s;
+        transition-duration: 10s;
+    }
+    div:hover{
+   width: 300px;
+   transform: rotate(360deg);
+    }
+    /* div1{
+        height: 100px;
+        width: 100px;
+        background-color: green;
+        transform: rotate(90deg);
+    }
+    div:hover{
+   width: 300px;
+   transform: rotate(360deg);
+    } */
+    div1{
+        transition-timing-function:ease;
+        transition-delay: 4s;
+    }
+    div2{
+        transition-timing-function:ease-in;
+    }
+    div3{
+        transition-timing-function:ease-in-out;
+    }
+    div4{
+        transition-timing-function:ease-out;
+    }
+    div5{
+        transition-timing-function:linear;
+    }
+div1:hover{
+    transition: 2s;
+}
+</style>
+<body>
+    <div class="paragraph">
+        <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Doloremque rem distinctio voluptas vitae est optio
+            odio quod eveniet quisquam consequuntur soluta molestias corrupti corporis, architecto sit repellat
+            expedita, reiciendis ut</p><br>
+    </div>
+    <!-- <div class="div1"></div><br>
+    <div class="div2"></div><br>
+    <div class="div3"></div><br>
+    <div class="div4"></div><br>
+    <div class="div5"></div><br>
+    <div class="div6"></div><br> -->
+</body>
+
+</html>
