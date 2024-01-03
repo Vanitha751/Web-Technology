@@ -1,0 +1,66 @@
+<html>
+
+<head>
+    <title>Transforms</title>
+</head>
+<!-- <style>
+    .paragraph{
+        margin-top: 200px;
+     background-color: yellowgreen;
+     height:300px;
+     width:300px;
+     /* transform: transaction(550px,110px); */
+     /* transform:rotate(90deg);  */
+     /* transform:scale(100); */
+      transform:scaleX(); 
+     /* transform:scaleY(100); */
+      /* transform:skew(110); */
+      /* transform:skewX(200px); */
+       /* transform:skewY(5000px); */
+    }
+</style> -->
+<style>
+    div{
+        height: 200px;
+        width: 200px;
+        background-color: rgb(176, 144, 144);
+        transition: width 4s,height 4s transform  2s;
+    }
+    div:hover{
+        transform:rotate(180deg);
+        width:300px;
+        height:300px;
+    }
+    .div1{
+        transition-timing-function: linear;
+    }
+    .div2{
+        transition-timing-function: ease;
+    }
+    .div3{
+        transition-timing-function: ease-in;
+    }
+    .div4{
+        transition-timing-function: ease-in-out;
+    }
+    .div{
+        transition-timing-function: ease-out;
+    }
+    div:hover{
+ width:300px;
+    }
+</style>
+<body>
+    <div class="paragraph"><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, alias voluptatum debitis adipisci deserunt
+        maxime tempora et impedit, aspernatur, vitae molestiae nihil numquam facilis nemo quaerat voluptatibus aliquid
+        non voluptatem!Lorem ipsum dolor sit amet consectetur adipisicing elit. Magnam, alias voluptatum debitis adipisci deserunt
+        maxime tempora et impedit, aspernatur, vitae molestiae nihil numquam facilis nemo quaerat voluptatibus aliquid
+        non voluptatem!
+       </p></div>
+       <div class="div1"></div></br>
+       <div class="div2"></div></br>
+       <div class="div3"></div></br>
+       <div class="div4"></div></br>
+</body>
+
+</html>
